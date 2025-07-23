@@ -1,0 +1,22 @@
+"""Cloud Run deployment configuration for Customer Experience Rescue Swarm."""
+
+service: cx-rescue-swarm
+runtime: python311
+
+env_variables:
+  GOOGLE_CLOUD_PROJECT: "your-project-id"
+  VERTEX_AI_LOCATION: "us-central1"
+  
+automatic_scaling:
+  min_instances: 0
+  max_instances: 10
+  target_cpu_utilization: 0.6
+
+resources:
+  cpu: 1
+  memory_gb: 2
+
+handlers:
+- url: /.*
+  script: main.app
+  secure: always
