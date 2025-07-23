@@ -12,7 +12,7 @@ google-cloud-functions-framework==3.5.0
 functions-framework==3.5.0
 
 # HTTP and API tools
-requests==2.31.0
+requests==2.32.4
 httpx==0.25.2
 
 # Data processing
