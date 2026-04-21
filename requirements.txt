@@ -25,7 +25,7 @@ twilio==8.10.0
 
 # JSON and data handling
 pydantic==2.5.0
-python-dotenv==1.0.0
+python-dotenv==1.2.2
 
 # Testing
 pytest==7.4.3
